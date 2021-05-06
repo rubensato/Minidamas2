@@ -58,22 +58,25 @@ header label:hover {
 
 .row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 aside {
   flex: 30%;
+  background-color: #333333;
   padding: 20px;
 }
 
 section {
   flex: 70%;
+  background-color: #aaaaaa;
   padding: 20px;
   align-items: center;
 }
 
 #tablero-marco{
-    background-color: #999;
+    background-color: blue;
 }
 
 #tablero-damas{
@@ -84,13 +87,13 @@ section {
 .casilla-blanca{
   width: 60px;
   height: 60px;
-  background-color: #F7F7F7;
+  background-color: orange;
 }
 
 .casilla-negra{
   width: 60px;
   height: 60px;
-  background-color: #292929;
+  background-color: brown;
 }
 
 #boton-nueva-partida {
@@ -99,7 +102,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
-  background-color:#4DA4E1;
+  background-color:#aa77aa;
   border: 0;
   border-radius: 5px;
 }
