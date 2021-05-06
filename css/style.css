@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   background-color: #fff;
   color: #000;
@@ -64,12 +68,12 @@ aside {
 
 section {
   flex: 70%;
+  padding: 20px;
+  align-items: center;
 }
-
 
 #tablero-marco{
     background-color: #999;
-    margin-bottom: 20px;
 }
 
 #tablero-damas{
