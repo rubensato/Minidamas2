@@ -52,6 +52,56 @@ header label:hover {
   text-decoration: none;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 30%;
+  padding: 20px;
+}
+
+section {
+  flex: 70%;
+}
+
+
+#tablero-marco{
+    background-color: #999;
+    margin-bottom: 20px;
+}
+
+#tablero-damas{
+  border-collapse: collapse;
+  border: 0;
+}
+
+.casilla-blanca{
+  width: 60px;
+  height: 60px;
+  background-color: #F7F7F7;
+}
+
+.casilla-negra{
+  width: 60px;
+  height: 60px;
+  background-color: #292929;
+}
+
+#boton-nueva-partida {
+  height: 35px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color:#4DA4E1;
+  border: 0;
+  border-radius: 5px;
+}
+
+
+
 #main-footer{
   background: #333;
   color: #fff;
