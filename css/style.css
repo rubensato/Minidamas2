@@ -3,12 +3,17 @@
 }
 
 body{
-  background-color: #fff;
+  background-color: #aaaaaa;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   margin: 0;
+}
+
+.container{
+  width: 85%;
+  margin: auto;
 }
 
 header {
@@ -56,27 +61,34 @@ header label:hover {
   text-decoration: none;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+section#tablero {
 }
 
-aside {
+.row {
+  width: 85%;
+  display: flex;
+  margin: auto;
+}
+
+aside#menu-tablero {
   flex: 30%;
   background-color: #333333;
-  padding: 20px;
+  padding: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-right: 7px solid blue;
+  border-bottom: 7px solid blue;
 }
 
-section {
+#juego-damas {
   flex: 70%;
-  background-color: #aaaaaa;
   padding: 20px;
-  align-items: center;
 }
 
 #tablero-marco{
     background-color: blue;
+    margin: auto;
 }
 
 #tablero-damas{
@@ -105,9 +117,14 @@ section {
   background-color:#aa77aa;
   border: 0;
   border-radius: 5px;
+  border-right: 7px solid blue;
+  border-bottom: 7px solid blue;
+  margin: auto;
 }
 
-
+#boton-nueva-partida:hover{
+  background-color:#ddaadd;
+}
 
 #main-footer{
   background: #333;
@@ -119,7 +136,7 @@ section {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header label {
     display: block;
   }
