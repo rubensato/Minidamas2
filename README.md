@@ -43,6 +43,11 @@ Esta semana se evaluará:
 - Colaboración con los compañeros de clase para mejorar los conocimientos y avanzar como grupo.
 
 ---
+Link en Github Pages:
+
+https://rubensato.github.io/Minidamas2/
+
+---
 ## Licencia y Copyright
 
 © Ruben Sato - Año 2021
