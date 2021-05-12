@@ -1,3 +1,6 @@
+/*archivo css de la version personalizada del juego Mini Damas*/
+
+/*parametros generales*/
 * {
   box-sizing: border-box;
 }
@@ -16,6 +19,7 @@ body{
   margin: auto;
 }
 
+/*encabezado - menu*/
 header {
   width: 100%;
   background: #4e94ab;
@@ -61,7 +65,7 @@ header label:hover {
   text-decoration: none;
 }
 
-
+/*area juego - tablero*/
 section#tablero {
 }
 
@@ -71,18 +75,8 @@ section#tablero {
   margin: auto;
 }
 
-aside#menu-tablero {
-  flex: 30%;
-  background-color: #333333;
-  padding: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-right: 7px solid blue;
-  border-bottom: 7px solid blue;
-}
-
 #juego-damas {
-  flex: 70%;
+  width: 70%;
   padding: 20px;
 }
 
@@ -108,9 +102,52 @@ aside#menu-tablero {
   background-color: brown;
 }
 
+/*area juego - menu lateral puntajes y boton*/
+aside#menu-tablero {
+  width: 30%;
+  background-color: #333333;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-right: 7px solid blue;
+  border-bottom: 7px solid blue;
+}
+
+#menu-tablero h2 {
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+}
+
+.puntajes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align: center;
+}
+
+.puntajes h3 {
+  color: yellow;
+  font-style: italic;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.puntajes input {
+  font-size: 30px;
+  color: yellow;
+  font-style: italic;
+  margin-right: 10px;
+  text-align: center;
+  width: 100px;
+  background-color: blue;
+  border-right: 7px solid orange;
+  border-bottom: 7px solid orange;
+}
+
 #boton-nueva-partida {
   height: 35px;
-  width: 250px;
+  width: 90%;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
@@ -119,13 +156,14 @@ aside#menu-tablero {
   border-radius: 5px;
   border-right: 7px solid blue;
   border-bottom: 7px solid blue;
-  margin: auto;
+  margin-top: 25px;
 }
 
 #boton-nueva-partida:hover{
   background-color:#ddaadd;
 }
 
+/*footer*/
 #main-footer{
   background: #333;
   color: #fff;
@@ -135,6 +173,23 @@ aside#menu-tablero {
 
 
 
+/*media queries - comportamiento responsivo*/
+@media (max-width: 1024px) {
+  .row {
+    width: 85%;
+    display: block;
+    margin: auto;
+  }
+
+  #juego-damas {
+    width: 100%;
+  }
+
+  aside#menu-tablero {
+    width: 500px;
+    margin: auto
+  }
+}
 
 @media (max-width: 768px) {
   header label {
