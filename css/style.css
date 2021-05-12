@@ -7,6 +7,9 @@
 
 body{
   background-color: #aaaaaa;
+  background-image: url(../img/fondo-tablero.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -188,21 +191,31 @@ aside#menu-tablero {
 
 /*media queries - comportamiento responsivo*/
 @media (max-width: 1024px) {
+
   .row {
-    width: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+
+  .row {
+    width: 100%;
     display: block;
     margin: auto;
   }
 
   #juego-damas {
     width: 100%;
+    padding: 0px;
   }
 
   aside#menu-tablero {
     width: 500px;
-    margin: auto
+    margin: auto;
   }
 }
+
 
 @media (max-width: 768px) {
   header label {
