@@ -133,13 +133,13 @@ aside#menu-tablero {
   text-align: center;
 }
 
-.puntajes input {
+.jugador-puntaje {
   font-size: 30px;
   color: yellow;
   font-style: italic;
   margin-right: 10px;
   text-align: center;
-  width: 100px;
+  width: 150px;
   background-color: blue;
   border-right: 7px solid orange;
   border-bottom: 7px solid orange;
@@ -172,6 +172,19 @@ aside#menu-tablero {
 }
 
 
+#main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#main-footer abbr {
+  text-decoration: none;
+}
 
 /*media queries - comportamiento responsivo*/
 @media (max-width: 1024px) {
